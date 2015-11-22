@@ -11,9 +11,6 @@
 ## its input and stores it as inv, 4) getcache() returns the cached inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-        try(if(!is.matrix(x) | nrow(as.matrix(x)) != ncol(as.matrix(x)))
-                message("Warning: Input must be a square matrix to be invertible.")
-        )
         i <- NULL
         set <- function(y) {
                 x <<- y
